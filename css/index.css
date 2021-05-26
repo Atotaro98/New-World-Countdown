@@ -1,0 +1,263 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+   
+}
+
+body{
+    margin: 0;
+    background: url(./css/images/diamond-texture-top.png);
+    background-color: #3C3128;
+    background-repeat: no-repeat;
+
+}
+
+
+h1{
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-left: 1em;
+    text-align: center;
+}
+
+span{
+   color: #FCEECB;
+   font-size: 18px;
+}
+
+
+
+
+.btn{
+    border: 1px solid #ffb10f;
+    background: none;
+    padding: 18px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+  }
+  .btn1, a{
+    color: #ffb10f;
+  }
+
+  a:hover{
+    color: #232220;
+  }
+  
+  .btn1:hover{
+    color: #232220;
+    opacity: .7;
+  }
+ 
+  .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #ffb10f;
+    z-index: -1;
+    transition: 0s;
+  }
+  .btn1::before{
+    top: 0;
+  }
+ 
+ 
+  .btn1:hover::before{
+    height: 180%;
+  }
+   
+
+
+.beta p , .launch p { 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #FCEECB;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
+  header{
+    background-color: #232220;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+  }
+
+  .header-img{
+      width: 50px;
+      margin-left: 1em;
+  }
+  .bottom-img{
+    width: 200px;
+    margin-left: 1em;
+}
+
+  .div-left{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+  }
+
+  .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    margin-top: 4.5em;
+    margin-bottom: 4em;
+  }
+
+  .title{
+      margin-bottom: 0.5em;
+      color: #ffb10f;
+      border-bottom: 2px solid ;
+  }
+
+  .beta, .launch{
+   border: 2px solid #ffb10f;
+   padding: 4em;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   
+  }
+
+
+
+
+  /* FOOOTER STYLES */
+
+  .contenidopie{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+
+  .footer{
+      background-color: #272624;
+      width: 100%;
+      color: #FCEECB;
+  }
+
+  .color{
+      color: #ffb10f;
+  }
+
+  .api{
+      color: #ffb10f;
+  }
+  
+.redes{
+    margin: 20px 0;
+  }
+  
+  .fa-github{
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+  .redes a{ 
+    color: #FCEECB;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+  }
+
+  .powered{
+    color: #ffb10f;
+    font-size: 22px;
+  }
+
+  .redes a:hover{
+    color: #ffb10f;
+  }
+
+  .derecha h1{
+    font-size: 26px;
+  }
+  .izquierda{
+    display: flex;
+    justify-content: center;
+  }
+
+  .border{
+    width: 100px;
+    height: 4px;
+    
+  }
+
+  .display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+
+
+
+  
+
+
+
+
+
+
+  @media (max-width:960px) {
+ 
+    header{
+        justify-content: center;
+    }
+
+    .beta, .launch{
+        margin-bottom: 2em;
+    }
+
+    .beta p, .launch p{
+        font-size: 18px;
+    }
+  
+    .izquierda{
+      width: 100%;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+  
+    .derecha{
+      width: 100%;
+      text-align: center;
+    }
+  }
